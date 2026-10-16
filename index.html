@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diego Santana | Portfólio</title>
+<meta name="description" content="Portfólio de Diego Santana, estudante de informática e desenvolvedor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#inicio">DIEGO<span>SANTANA</span></a>
+    <nav aria-label="Principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <button id="tema" aria-label="Alternar tema claro/escuro">
+        <span class="knob">
+          <svg class="lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+        </span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="inicio">
+  <div>
+    <p class="ola">Olá, visitante! 👋</p>
+    <h1>Meu nome é Diego</h1>
+    <p class="papel">Estudante de Informática e desenvolvedor</p>
+    <div class="social">
+      <a href="https://github.com/Diego72454" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+      <a href="mailto:ds1368833@gmail.com" aria-label="E-mail">
+        <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.6 2L12 12.6 19.4 7H4.6zM4 17h16V9.2l-8 6-8-6V17z"/></svg>
+      </a>
+    </div>
+  </div>
+  <a class="scroll" href="#sobre">SCROLL<i></i></a>
+</section>
+
+<section id="sobre" class="sec">
+  <div class="wrap">
+    <div class="titulo"><small>Quem sou eu</small><h2>Mais sobre mim</h2></div>
+    <p>Sou estudante do curso técnico em Informática integrado ao ensino médio, e estou na reta final da formação. Gosto de transformar ideias em sistemas que funcionam de verdade, do banco de dados até a tela que a pessoa usa.</p>
+    <p>Durante o curso construí projetos completos, com front-end, back-end e publicação online. Estou explorando as áreas de TI para escolher em qual delas aprofundar, e aprendendo algo novo a cada projeto.</p>
+    <p>Procuro uma oportunidade para colocar em prática o que aprendi e continuar evoluindo.</p>
+
+    <div class="skills">
+      <div class="skill"><b>&lt;/&gt;</b>HTML</div>
+      <div class="skill"><b>{ }</b>CSS</div>
+      <div class="skill"><b>JS</b>JavaScript</div>
+      <div class="skill"><b>⚛</b>React</div>
+      <div class="skill"><b>☕</b>Java</div>
+      <div class="skill"><b>🍃</b>Spring Boot</div>
+      <div class="skill"><b>🗄</b>Banco de dados</div>
+      <div class="skill"><b>⑂</b>Git e GitHub</div>
+    </div>
+    <p class="chamada">Continue me conhecendo através dos meus trabalhos abaixo…</p>
+  </div>
+</section>
+
+<section id="projetos" class="sec" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="titulo"><small>Meus trabalhos</small><h2>Projetos</h2></div>
+
+    <article class="proj">
+      <div class="thumb">
+        <img src="images/cardapio.jpg" alt="Tela do cardápio digital Sabor Conquista, com categorias e produtos" loading="lazy">
+      </div>
+      <div>
+        <h3>Cardápio digital</h3>
+        <p>Criei este cardápio digital para ajudar a minha turma a vender mais e juntar recursos para a conclusão do curso. Em vez de depender de anotações e conversas avulsas, os produtos ficam reunidos num só lugar, o que deixa as vendas escolares mais simples, rápidas e organizadas para quem vende e para quem compra.</p>
+        <p style="margin-top:10px">O sistema tem tela de login, front-end e back-end separados, e já está em produção, sendo usado de verdade pela turma.</p>
+        <div class="tags"><span>Front-end</span><span>Back-end</span><span>Vercel</span></div>
+        <div class="links">
+          <a href="https://vendasescolares.vercel.app/login" target="_blank" rel="noopener">Ver projeto</a>
+          <a href="https://github.com/dih872/vendasescolares-front-end" target="_blank" rel="noopener">Front-end</a>
+          <a href="https://github.com/dih872/vendasescolares-back-end" target="_blank" rel="noopener">Back-end</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="thumb">
+        <img src="images/saude.jpg" alt="Tela de login do Lumen Care, com o lema Saúde na palma da sua mão" loading="lazy">
+      </div>
+      <div>
+        <h3>Lumen Care</h3>
+        <p>Meu projeto de conclusão do curso técnico: um sistema web para postos de saúde, pensado para acabar com a fila. O paciente se cadastra, pega fichas por especialidade, agenda consultas e acompanha o atendimento pelo celular, enquanto a administração cadastra os profissionais e cuida dos dados da unidade.</p>
+        <p style="margin-top:10px">O acesso é protegido por autenticação com JWT, o projeto é dividido em front-end e back-end e já está em produção.</p>
+        <div class="tags"><span>React</span><span>Vite</span><span>Java</span><span>Spring Boot</span><span>JWT</span></div>
+        <div class="links">
+          <a href="https://saudefacil.vercel.app" target="_blank" rel="noopener">Ver projeto</a>
+          <a href="https://github.com/Diego72454/saude-facil-frontend" target="_blank" rel="noopener">Front-end</a>
+          <a href="https://github.com/Diego72454/saude-facil-backend" target="_blank" rel="noopener">Back-end</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="thumb">
+        <!-- Para usar um print: salve em images/tcp.png e troque o <span> por <img src="images/tcp.png" alt="Tela da réplica do jogo"> -->
+        <span>TCP</span>
+      </div>
+      <div>
+        <h3>Réplica de jogo com sockets TCP</h3>
+        <p>Réplica de um jogo multiplayer em Java, com comunicação entre os jogadores por sockets TCP.</p>
+        <div class="tags"><span>Java</span><span>Sockets TCP</span></div>
+        <div class="links">
+          <a href="https://github.com/dih872/ProjetoTCPJava" target="_blank" rel="noopener">Ver no GitHub</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="contato" class="sec">
+  <div class="wrap">
+    <div class="titulo"><small>Vamos conversar</small><h2>Contato</h2></div>
+    <p>Quer falar sobre uma vaga, um projeto ou só trocar uma ideia? Me chame por e-mail ou veja meu código no GitHub.</p>
+    <div class="botoes">
+      <a class="btn cheio" href="mailto:ds1368833@gmail.com">Enviar e-mail</a>
+      <a class="btn" href="https://github.com/Diego72454" target="_blank" rel="noopener">Ver GitHub</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="ano"></span> Diego Santana</footer>
+<button id="topo" aria-label="Voltar ao topo">↑</button>
+
+<script>
+const raiz=document.documentElement;
+try{const t=localStorage.getItem('tema');if(t)raiz.dataset.theme=t}catch(e){}
+document.getElementById('tema').addEventListener('click',()=>{
+  const novo=raiz.dataset.theme==='light'?'dark':'light';
+  raiz.dataset.theme=novo;
+  try{localStorage.setItem('tema',novo)}catch(e){}
+});
+const topo=document.getElementById('topo');
+addEventListener('scroll',()=>topo.classList.toggle('on',scrollY>500),{passive:true});
+topo.addEventListener('click',()=>scrollTo({top:0}));
+document.getElementById('ano').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
