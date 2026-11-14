@@ -4,7 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diego Santana | Portfólio</title>
-<meta name="description" content="Portfólio de Diego Santana, estudante de informática e desenvolvedor.">
+<meta name="description" content="Estudante de Informática e desenvolvedor. Veja meus projetos: Lumen Care, Sabor Conquista e mais.">
+<meta name="theme-color" content="#1f1f21">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Diego Santana | Portfólio">
+<meta property="og:description" content="Estudante de Informática e desenvolvedor. Veja meus projetos: Lumen Care, Sabor Conquista e mais.">
+<meta property="og:image" content="https://diego-santana-dev.vercel.app/images/og.jpg">
+<meta property="og:url" content="https://diego-santana-dev.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -15,18 +23,21 @@
 <header>
   <div class="wrap">
     <a class="logo" href="#inicio">DIEGO<span>SANTANA</span></a>
-    <nav aria-label="Principal">
+    <nav id="menu-nav" aria-label="Principal">
       <a href="#inicio">Início</a>
       <a href="#sobre">Sobre</a>
       <a href="#projetos">Projetos</a>
       <a href="#contato">Contato</a>
+    </nav>
+    <div class="acoes">
       <button id="tema" aria-label="Alternar tema claro/escuro">
         <span class="knob">
           <svg class="lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
           <svg class="sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
         </span>
       </button>
-    </nav>
+      <button id="menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-nav"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </header>
 
@@ -37,6 +48,9 @@
     <h1>Meu nome é Diego</h1>
     <p class="papel">Estudante de Informática e desenvolvedor</p>
     <div class="social">
+      <a href="https://www.linkedin.com/in/diego-santana-503a62210/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3V9.75zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.06 3.78-2.06 4.04 0 4.78 2.66 4.78 6.1V21h-4v-4.8c0-1.15-.02-2.62-1.6-2.62-1.6 0-1.85 1.25-1.85 2.54V21h-4V9.75z"/></svg>
+      </a>
       <a href="https://github.com/Diego72454" target="_blank" rel="noopener" aria-label="GitHub">
         <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
       </a>
@@ -80,7 +94,7 @@
       <div>
         <h3>Cardápio digital</h3>
         <p>Criei este cardápio digital para ajudar a minha turma a vender mais e juntar recursos para a conclusão do curso. Em vez de depender de anotações e conversas avulsas, os produtos ficam reunidos num só lugar, o que deixa as vendas escolares mais simples, rápidas e organizadas para quem vende e para quem compra.</p>
-        <p style="margin-top:10px">O sistema tem tela de login, front-end e back-end separados, com pagina de admin para separa os lucros e ter mais controle finaceiro das vendas, e já está em produção, sendo usado de verdade pela turma.</p>
+        <p style="margin-top:10px">O sistema tem tela de login, front-end e back-end separados, com pagina de admin onde podem ter o controle finaceiro, e já está em produção, sendo usado de verdade pela turma.</p>
         <div class="tags"><span>Front-end</span><span>Back-end</span><span>Vercel</span></div>
         <div class="links">
           <a href="https://vendasescolares.vercel.app/login" target="_blank" rel="noopener">Ver projeto</a>
@@ -109,6 +123,7 @@
 
     <article class="proj">
       <div class="thumb">
+        <!-- Para usar um print: salve em images/saude-jovem.jpg e troque o <span> por <img src="images/saude-jovem.jpg" alt="Tela do site Saúde Jovem" loading="lazy"> -->
         <img src="images/saude-jovem.jpg" alt="Tela do site Saude-jovem" loading="lazy">
       </div>
       <div>
@@ -129,7 +144,7 @@
       </div>
       <div>
         <h3>Réplica de jogo com sockets TCP</h3>
-        <p>Ludo TCP é uma implementação do jogo clássico Ludo desenvolvida em Java com sockets TCP. O jogo permite que três jogadores compitam entre si por meio de uma conexão de rede.</p>
+        <p>Ludo TCP é uma implementação do jogo clássico Ludo desenvolvida em Java com sockets TCP. O jogo permite que 3 jogadores compitam entre si através de uma conexão de rede.</p>
         <div class="tags"><span>Java</span><span>Sockets TCP</span></div>
         <div class="links">
           <a href="https://github.com/dih872/ProjetoTCPJava" target="_blank" rel="noopener">Ver no GitHub</a>
@@ -142,10 +157,12 @@
 <section id="contato" class="sec">
   <div class="wrap">
     <div class="titulo"><small>Vamos conversar</small><h2>Contato</h2></div>
-    <p>Quer falar sobre uma vaga, um projeto ou só trocar uma ideia? Me chame por e-mail ou veja meu código no GitHub.</p>
+    <p>Quer falar sobre uma vaga, um projeto ou só trocar uma ideia? Me chame por e-mail ou LinkedIn, baixe meu currículo ou veja meu código no GitHub.</p>
     <div class="botoes">
-      <a class="btn cheio" href="mailto:ds1368833@gmail.com">Enviar e-mail</a>
-      <a class="btn" href="https://github.com/Diego72454" target="_blank" rel="noopener">Ver GitHub</a>
+      <a class="btn cheio" href="curriculo-diego-santana.pdf" download>Baixar currículo (PDF)</a>
+      <a class="btn" href="mailto:ds1368833@gmail.com">E-mail</a>
+      <a class="btn" href="https://www.linkedin.com/in/diego-santana-503a62210/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/Diego72454" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </section>
@@ -166,6 +183,25 @@ const topo=document.getElementById('topo');
 addEventListener('scroll',()=>topo.classList.toggle('on',scrollY>500),{passive:true});
 topo.addEventListener('click',()=>scrollTo({top:0}));
 document.getElementById('ano').textContent=new Date().getFullYear();
+
+/* menu do celular */
+const menuBtn=document.getElementById('menu'),nav=document.getElementById('menu-nav');
+function fechaMenu(){nav.classList.remove('aberto');menuBtn.setAttribute('aria-expanded','false');menuBtn.setAttribute('aria-label','Abrir menu')}
+menuBtn.addEventListener('click',()=>{const a=nav.classList.toggle('aberto');menuBtn.setAttribute('aria-expanded',a);menuBtn.setAttribute('aria-label',a?'Fechar menu':'Abrir menu')});
+nav.querySelectorAll('a').forEach(l=>l.addEventListener('click',fechaMenu));
+addEventListener('keydown',e=>{if(e.key==='Escape')fechaMenu()});
+/* destaque da seção atual no menu */
+if('IntersectionObserver' in window){
+  const links=[...nav.querySelectorAll('a')];
+  const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('ativo',l.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('#inicio,#sobre,#projetos,#contato').forEach(sec=>spy.observe(sec));
+  /* animação suave ao rolar */
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    const alvos=document.querySelectorAll('.titulo,#sobre p,.skill,.proj,#contato p,.botoes');
+    const rev=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visivel');rev.unobserve(e.target);if(e.target.style.transitionDelay)setTimeout(()=>{e.target.style.transitionDelay=''},900)}}),{threshold:.12});
+    alvos.forEach((el,i)=>{el.classList.add('reveal');if(el.classList.contains('skill'))el.style.transitionDelay=(i%4)*60+'ms';rev.observe(el)});
+  }
+}
 </script>
 </body>
 </html>
